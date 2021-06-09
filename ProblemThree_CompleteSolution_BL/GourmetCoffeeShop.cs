@@ -16,12 +16,12 @@ namespace ProblemThree_CompleteSolution_BL
         }
         public override double PayPerPiece(int quantity)
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         public override double PayPerWeight(int weight)
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         public double TaxOnTotalBill()

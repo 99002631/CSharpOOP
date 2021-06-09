@@ -20,12 +20,12 @@ namespace ProblemThree_CompleteSolution_BL
         }
         public override double PayPerWeight(int weight)
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         public double TaxOnTotalBill()
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         public double totalBillValue
