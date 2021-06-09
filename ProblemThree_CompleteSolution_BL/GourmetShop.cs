@@ -10,7 +10,7 @@ namespace ProblemThree_CompleteSolution_BL
     {
         public int ItemCode { get; set; }
         public String ItemName { get; set; }
-        protected Dictionary<int, double> ItemPrice = new Dictionary<int, double>();
+        private Dictionary<int, double> ItemPrice { get; set; }
 
         public GourmetShop(int iCode, string iName)
         {

@@ -11,7 +11,7 @@ namespace ProblemThree_CompleteSolution_BL
         double TotalBillValue { get; set; }
         public override double PayPerPiece(int quantity)
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         public GourmetOrganicShop (int iCode, string iName, Dictionary<int, double> iPrice):base(iCode, iName)
