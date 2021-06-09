@@ -8,12 +8,10 @@ namespace ProblemThree_CompleteSolution_BL
 {
     public class GourmetCoffeeShop : GourmetShop, ITaxCompute
     {
-        double TotalBillValue;
+        double TotalBillValue { get; set; }
 
-        public GourmetCoffeeShop(int iCode, string iName, Dictionary<int, double> iPrice)
+        public GourmetCoffeeShop(int iCode, string iName, Dictionary<int, double> iPrice) : base(iCode, iName)
         {
-            itemCode = iCode;
-            itemName = iName;
             itemPrice = iPrice;
         }
         public override double PayPerPiece(int quantity)

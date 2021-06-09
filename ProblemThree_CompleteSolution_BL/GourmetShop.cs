@@ -8,8 +8,8 @@ namespace ProblemThree_CompleteSolution_BL
 {
     public abstract class GourmetShop
     {
-        int ItemCode;
-        String ItemName;
+        public int ItemCode { get; set; }
+        public String ItemName { get; set; }
         Dictionary<int, double> ItemPrice = new Dictionary<int, double>();
 
         public GourmetShop(int iCode, string iName)

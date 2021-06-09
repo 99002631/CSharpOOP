@@ -8,16 +8,14 @@ namespace ProblemThree_CompleteSolution_BL
 {
     public class GourmetOrganicShop : GourmetShop, ITaxCompute
     {
-        double TotalBillValue;
+        double TotalBillValue { get; set; }
         public override double PayPerPiece(int quantity)
         {
             throw new NotImplementedException();
         }
 
-        public GourmetOrganicShop (int iCode, string iName, Dictionary<int, double> iPrice)
+        public GourmetOrganicShop (int iCode, string iName, Dictionary<int, double> iPrice):base(iCode, iName)
         {
-            itemCode = iCode;
-            itemName = iName;
             itemPrice = iPrice;
         }
         public override double PayPerWeight(int weight)
